@@ -1,0 +1,85 @@
+ 
+@font-face {
+    font-family: Karla-Regular;
+    src: url(../fonts/Karla-Regular.ttf); 
+}
+
+
+/* Estilos para el header*/
+header {
+    text-align: center;
+}
+
+/* Estilos para el nav*/
+nav {
+    background-color: #5A5A5A;
+    
+}
+
+/* Estilos para la listas que contiene el nav*/
+nav li {
+    font-family: Karla-Regular;
+    font-size: 14px;
+    display: inline;
+    margin: 20px;
+}
+
+/* Estilos para los vinulos que tiene el nav*/
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+/* Estilos para las secciones que tiene clase textMisionVision */
+.textMisionVision{
+    font-style: italic;
+}
+
+/* Estilos para lo que esta dentro del main */
+#areaElectricaySoftware h2 {
+    text-align: center;
+}
+
+#areaTratamientoDeAgua h2 {
+    text-align: center;
+}
+
+#sectionProductos .producto {
+    border: solid 1px;
+}
+
+#sectionProductos a {
+    text-decoration: none;
+    color: black;
+}
+
+#sectionProductos .producto p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+form {
+    font-family: Karla-Regular;
+}
+
+/* fin de los estilos que esta dentro del main */
+
+
+/* Estilos para el pie de pagina */
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    background-color: #5A5A5A;
+    color: white;
+}
