@@ -17,17 +17,40 @@ nav {
 }
 
 /* Estilos para la listas que contiene el nav*/
-nav li {
+/* nav li {
     font-family: Karla-Regular;
     font-size: 14px;
-    display: inline;
-    margin: 20px;
-}
+/*     display: inline; */
+/*     margin: 20px; 
+} */
 
 /* Estilos para los vinulos que tiene el nav*/
-nav a {
+/* nav a {
     color: white;
     text-decoration: none;
+} */
+
+
+.nav-item a {
+    font-family: Karla-Regular;
+    font-size: 14px;
+    margin: 5px 40px 5px 40px;
+}
+
+main {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    /* colapsar o no colpsar */
+    flex-wrap: wrap;
+}
+
+#slider {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h1 {
