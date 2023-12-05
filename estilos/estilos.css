@@ -16,21 +16,6 @@ nav {
     
 }
 
-/* Estilos para la listas que contiene el nav*/
-/* nav li {
-    font-family: Karla-Regular;
-    font-size: 14px;
-/*     display: inline; */
-/*     margin: 20px; 
-} */
-
-/* Estilos para los vinulos que tiene el nav*/
-/* nav a {
-    color: white;
-    text-decoration: none;
-} */
-
-
 .nav-item a {
     font-family: Karla-Regular;
     color: black;
@@ -54,9 +39,6 @@ main {
 #carouselExample {
     display: flex; 
     justify-content: center;
-    /* width: 100%;
-    text-align: center;
-    margin-bottom: 50px; */
 }
 
 
@@ -84,8 +66,23 @@ h2 {
     text-align: center;
 }
 
+.productos-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas con anchura igual */
+    gap: 20px; /* Espaciado entre las cajas de productos */
+
+    /* media query para pantalla pequeñas */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Una sola columna en dispositivos mss pequeños */
+    }
+}
+
 #sectionProductos .producto {
-    border: solid 1px;
+    /* border: solid 1px; */
+
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
 }
 
 #sectionProductos a {
@@ -101,6 +98,9 @@ h2 {
 form {
     font-family: Karla-Regular;
 }
+
+
+
 
 /* fin de los estilos que esta dentro del main */
 
