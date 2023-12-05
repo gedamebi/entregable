@@ -25,7 +25,7 @@
                             <a class="nav-link" aria-current="page" href="./nosotros.html">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./mision.html">MISION</a>
+                            <a class="nav-link" aria-current="page" href="./mision.html">MISI&Oacute;N</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./productos.html">PRODUCTOS</a>
@@ -41,27 +41,35 @@
     <main>
         <div class="container">
             <h1>Contacto</h1>
-            <form id="formContacto" action="">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre"><br>
+            <div class="container-contacto">
+                <div id="item-1">
+                    <form id="formContacto" action="">
+                        <label>NOMBRE</label><br>
+                        <input type="text" name="nombre" class="commponente-form-contacto"><br>
 
-                <label for="correo">Correo:</label>
-                <input type="text" name="correo"><br>
+                        <label>CORREO</label><br>
+                        <input type="text" name="correo" class="commponente-form-contacto"><br>
 
-                <label for="area">Area:</label>
-                <select name="area" id="area">
-                    <option value="ventas">Ventas</option>
-                    <option value="servicio">Servicios</option>
-                    <option value="administracion">Administracion</option>
-                </select><br>
+                        <label>&Aacute;REA</label><br>
+                        <select name="area" id="area" class="commponente-form-contacto">
+                            <option value="ventas">Ventas</option>
+                            <option value="servicio">Servicios</option>
+                            <option value="administracion">Administracion</option>
+                        </select><br>
 
-                <label for="consulta">Consulta:</label>
-                <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea><br>
+                        <label>CONSULTA</label><br>
+                        <textarea name="consulta" id="consulta" cols="30" rows="10" class="commponente-form-contacto"></textarea><br>
 
-                <button>Enviar</button>
-            </form>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1311.741519716284!2d-56.16076132484247!3d-34.935320501967894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f822a9e13a7ff%3A0x388c643a31dfaf62!2sFaro%20de%20Punta%20Carretas!5e0!3m2!1ses-419!2suy!4v1698670031058!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea pariatur sunt cum, fuga enim explicabo! Cum est dicta ab recusandae doloremque deserunt voluptates amet, accusamus delectus et quidem facere? Ex.</p>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+                <div id="item-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1311.741519716284!2d-56.16076132484247!3d-34.935320501967894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f822a9e13a7ff%3A0x388c643a31dfaf62!2sFaro%20de%20Punta%20Carretas!5e0!3m2!1ses-419!2suy!4v1698670031058!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="item-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea pariatur sunt cum, fuga enim explicabo! Cum est dicta ab recusandae doloremque deserunt voluptates amet, accusamus delectus et quidem facere? Ex.</p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

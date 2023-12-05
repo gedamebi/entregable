@@ -4,6 +4,11 @@
     src: url(../fonts/Karla-Regular.ttf); 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* Estilos para el header*/
 header {
@@ -23,22 +28,25 @@ nav {
     margin: 5px 40px 5px 40px;
 }
 
+
+/* Estilos para lo que esta dentro del main */
 main {
-    display: flex;
     padding: 30px;
-    align-items: center;
-    justify-content: center;
-    /* colapsar o no colpsar */
-    flex-wrap: wrap;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
 
 #slider {
     display: flex; 
     justify-content: center;
-}
-#carouselExample {
-    display: flex; 
-    justify-content: center;
+    margin-bottom: 20px;
+
 }
 
 
@@ -57,13 +65,23 @@ h2 {
     font-style: italic;
 }
 
-/* Estilos para lo que esta dentro del main */
+
+#areaElectricaySoftware {
+    margin-top: 30px;
+}
+
 #areaElectricaySoftware h2 {
     text-align: center;
+    font-weight: bold;
+}
+
+#areaTratamientoDeAgua {
+    margin-top: 30px;
 }
 
 #areaTratamientoDeAgua h2 {
     text-align: center;
+    font-weight: bold;
 }
 
 .productos-container{
@@ -95,11 +113,51 @@ h2 {
     font-size: 12px;
 }
 
-form {
-    font-family: Karla-Regular;
+.container-contacto {
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas con anchura igual */
+    gap: 20px;
+
+    /* media query para pantalla pequeñas */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Una sola columna en dispositivos mss pequeños */
+        text-align: center;
+    }
+}
+
+.container-contacto #item-2 iframe{
+    width: 600px;
+    height: 450px;
+
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 250px;
+    }
 }
 
 
+.container-contacto #item-3 {
+    grid-column: span 2;
+
+    @media (max-width: 768px) {
+        grid-column: span 1;
+    }
+}
+
+form {
+    font-family: Karla-Regular;
+    margin-bottom: 50px;
+}
+
+.commponente-form-contacto {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#formContacto label {
+    font-weight: bold;
+}
 
 
 /* fin de los estilos que esta dentro del main */
@@ -107,9 +165,11 @@ form {
 
 /* Estilos para el pie de pagina */
 footer{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    background-color: #5A5A5A;
-    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
