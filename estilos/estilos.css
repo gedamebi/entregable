@@ -28,6 +28,10 @@ nav {
     margin: 5px 40px 5px 40px;
 }
 
+.nav-item a:hover {
+    font-weight: bold;
+}
+
 
 /* Estilos para lo que esta dentro del main */
 main {
@@ -86,7 +90,7 @@ h2 {
 
 .productos-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas con anchura igual */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas del mismo ancho */
     gap: 20px; /* Espaciado entre las cajas de productos */
 
     /* media query para pantalla pequeñas */
@@ -112,8 +116,7 @@ h2 {
 
 .container-contacto {
     display: grid;
-    
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas con anchura igual */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas del mismo ancho */
     gap: 20px;
 
     /* media query para pantalla pequeñas */
@@ -127,6 +130,7 @@ h2 {
     width: 600px;
     height: 450px;
 
+    /* anchico el tamaño del mapa en pantallas mas pequeñas*/
     @media (max-width: 768px) {
         width: 300px;
         height: 250px;
@@ -155,9 +159,6 @@ form {
 #formContacto label {
     font-weight: bold;
 }
-
-
-/* fin de los estilos que esta dentro del main */
 
 
 /* Estilos para el pie de pagina */
