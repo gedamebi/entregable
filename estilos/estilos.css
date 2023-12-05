@@ -95,10 +95,7 @@ h2 {
     }
 }
 
-#sectionProductos .producto {
-    /* border: solid 1px; */
-
-    border: 1px solid #ddd;
+#sectionProductos .col-producto {
     padding: 20px;
     text-align: center;
 }
@@ -108,7 +105,7 @@ h2 {
     color: black;
 }
 
-#sectionProductos .producto p {
+#sectionProductos .col-producto p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
@@ -126,7 +123,7 @@ h2 {
     }
 }
 
-.container-contacto #item-2 iframe{
+.container-contacto #item-mapa iframe{
     width: 600px;
     height: 450px;
 
@@ -137,7 +134,7 @@ h2 {
 }
 
 
-.container-contacto #item-3 {
+.container-contacto #item-text {
     grid-column: span 2;
 
     @media (max-width: 768px) {
