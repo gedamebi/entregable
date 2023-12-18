@@ -30,6 +30,7 @@ nav {
 
 .nav-item a:hover {
     font-weight: bold;
+    transform: scale(1.1, 1.1);
 }
 
 
@@ -62,6 +63,24 @@ h1 {
 h2 {
     font-family: sans-serif;
     font-size: 16px;
+}
+
+@keyframes efecto_mensaje_bienvenida {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+#sectionHome h1 {
+    animation-name: efecto_mensaje_bienvenida;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
 }
 
 /* Estilos para las secciones que tiene clase textMisionVision */
@@ -99,10 +118,13 @@ h2 {
     }
 }
 
+
 #sectionProductos .col-producto {
     padding: 20px;
     text-align: center;
+
 }
+
 
 #sectionProductos a {
     text-decoration: none;
@@ -113,6 +135,7 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
+
 
 .container-contacto {
     display: grid;
