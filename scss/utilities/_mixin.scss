@@ -12,7 +12,10 @@
     font-size: $size;
     color: $color;
 
-    /* Si pasan null en el argumento de aliniacion ignora la asignacion del atributo */
+    /* 
+        Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
+        si bien no es necesario lo hago para usar una condicional 
+    */
     @if $align != null {
         text-align: $align;
     }

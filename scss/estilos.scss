@@ -9,14 +9,14 @@
     padding: 0;
 }
 
-// Importo variables
+// Hago las importaciones
 @import "utilities/variables";
 @import "utilities/animaciones";
 @import "utilities/mixin";
+@import "utilities/extend";
 
 // Importo los estilos para la pagina nosotros
 @import "layout/nosotros";
-
 // Importo los estilos para la pagina productos
 @import "layout/productos";
 
@@ -55,7 +55,7 @@ main {
 }
 
 h1 {
-    /* param: fuente, tamañp, color, aliniacion */
+    /* param: fuente, tamaño, color, aliniacion */
     @include fuente (sans-serif, 28px, black, center);
 }
 
@@ -120,6 +120,14 @@ form {
 #formContacto {
     label {
         font-weight: bold;
+    }
+
+    // Extiende los estilos base de botón
+    .form-button {
+        @extend .button;
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 5px;
     }
 }
 

@@ -16,6 +16,24 @@
   100% {
     opacity: 0; } }
 
+@keyframes efecto_cursos_sobre_producto {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.button, #formContacto .form-button {
+  padding: 10px;
+  background-color: #3a3a3a;
+  color: #fff;
+  border: 1px solid #3a3a3a; }
+
+.button:hover, #formContacto .form-button:hover {
+  background-color: #3a3a3a;
+  border-color: #3a3a3a; }
+
 /* Estilos para las secciones que tiene clase textMisionVision */
 .textMisionVision {
   font-style: italic; }
@@ -72,7 +90,10 @@ header {
       font-family: Karla-Regular;
       font-size: 18px;
       color: black;
-      /* Si pasan null en el argumento de aliniacion ignora la asignacion del atributo */
+      /* 
+        Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
+        si bien no es necesario lo hago para usar una condicional 
+    */
       margin: 5px 40px 5px 40px; }
     header nav .nav-item a:hover {
       font-weight: bold;
@@ -87,11 +108,14 @@ main .container {
   margin-bottom: 20px; }
 
 h1 {
-  /* param: fuente, tamañp, color, aliniacion */
+  /* param: fuente, tamaño, color, aliniacion */
   font-family: sans-serif;
   font-size: 28px;
   color: black;
-  /* Si pasan null en el argumento de aliniacion ignora la asignacion del atributo */
+  /* 
+        Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
+        si bien no es necesario lo hago para usar una condicional 
+    */
   text-align: center; }
 
 h2 {
@@ -99,7 +123,10 @@ h2 {
   font-family: sans-serif;
   font-size: 16px;
   color: black;
-  /* Si pasan null en el argumento de aliniacion ignora la asignacion del atributo */
+  /* 
+        Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
+        si bien no es necesario lo hago para usar una condicional 
+    */
   text-align: center; }
 
 #sectionHome h1 {
@@ -145,6 +172,11 @@ form {
 #formContacto label {
   font-weight: bold; }
 
+#formContacto .form-button {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px; }
+
 /* Estilos para el pie de pagina */
 footer {
   background-color: #333;
@@ -152,7 +184,10 @@ footer {
   font-family: sans-serif;
   font-size: 16px;
   color: #fff;
-  /* Si pasan null en el argumento de aliniacion ignora la asignacion del atributo */
+  /* 
+        Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
+        si bien no es necesario lo hago para usar una condicional 
+    */
   text-align: center;
   padding: 10px;
   position: relative;

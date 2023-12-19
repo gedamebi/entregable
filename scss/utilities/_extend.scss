@@ -1,0 +1,13 @@
+// Definición de estilos para un botón para luego usar extend
+.button {
+    padding: 10px;
+    background-color: #3a3a3a;
+    color: #fff;
+    border: 1px solid #3a3a3a;
+}
+
+// Estilos adicionales para un botón con un estado "hover"
+.button:hover {
+    background-color: #3a3a3a;
+    border-color: #3a3a3a;
+}
