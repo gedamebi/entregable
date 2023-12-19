@@ -1,0 +1,137 @@
+
+@font-face {
+    font-family: Karla-Regular;
+    src: url(../fonts/Karla-Regular.ttf); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Importo variables
+@import "utilities/variables";
+@import "utilities/animaciones";
+@import "utilities/mixin";
+
+// Importo los estilos para la pagina nosotros
+@import "layout/nosotros";
+
+// Importo los estilos para la pagina productos
+@import "layout/productos";
+
+
+/* Estilos para el header*/
+header {
+    text-align: center;
+    /* Estilos para el nav*/
+    nav {
+        background-color: $bg-color-nav;
+        .nav-item {
+            a {
+                /* param: fuente, tamañp, color, aliniacion */
+                @include fuente (Karla-Regular, $font-size-nav, $font-color-nav, null);
+                margin: 5px 40px 5px 40px;
+            }
+            a:hover {
+                font-weight: bold;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+main {
+    .container{
+        padding-top: 20px;
+    }
+}
+
+#slider {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+h1 {
+    /* param: fuente, tamañp, color, aliniacion */
+    @include fuente (sans-serif, 28px, black, center);
+}
+
+h2 {
+    /* param: fuente, tamaño, color, aliniacion */
+    @include fuente (sans-serif, 16px, black, center);
+}
+
+
+#sectionHome {
+    h1 {
+        /* param: nombre, cantidadDeCiclos, velocidad, duracion */
+        @include animacion (efecto_mensaje_bienvenida, infinite, ease-in, 4s);
+    }
+}
+
+
+
+.container-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas del mismo ancho */
+    gap: 20px;
+
+    /* media query para pantalla pequeñas */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Una sola columna en dispositivos mss pequeños */
+        text-align: center;
+    }
+
+    #item-mapa {
+        iframe {
+            width: 600px;
+            height: 450px;
+            /* anchico el tamaño del mapa en pantallas mas pequeñas*/
+            @media (max-width: 768px) {
+                width: 300px;
+                height: 250px;
+            }
+        }
+    }
+
+    #item-text {
+        grid-column: span 2;
+
+        @media (max-width: 768px) {
+            grid-column: span 1;
+        }
+    }
+}
+
+
+form {
+    font-family: Karla-Regular;
+    margin-bottom: 50px;
+}
+
+.commponente-form-contacto {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#formContacto {
+    label {
+        font-weight: bold;
+    }
+}
+
+/* Estilos para el pie de pagina */
+footer{
+    background-color: $bg-color-footer;
+    /* param: fuente, tamaño, color, aliniacion */
+    @include fuente (sans-serif, 16px, $font-color-footer, center);
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+

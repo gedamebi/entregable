@@ -1,0 +1,196 @@
+ 
+@font-face {
+    font-family: Karla-Regular;
+    src: url(../fonts/Karla-Regular.ttf); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos para el header*/
+header {
+    text-align: center;
+}
+
+/* Estilos para el nav*/
+nav {
+    background-color: #ececec;
+    
+}
+
+.nav-item a {
+    font-family: Karla-Regular;
+    color: black;
+    font-size: 18px;
+    margin: 5px 40px 5px 40px;
+}
+
+.nav-item a:hover {
+    font-weight: bold;
+    transform: scale(1.1, 1.1);
+}
+
+
+/* Estilos para lo que esta dentro del main */
+main {
+    padding: 30px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+#slider {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+@keyframes efecto_mensaje_bienvenida {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+#sectionHome h1 {
+    animation-name: efecto_mensaje_bienvenida;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+}
+
+/* Estilos para las secciones que tiene clase textMisionVision */
+.textMisionVision{
+    font-style: italic;
+}
+
+
+#areaElectricaySoftware {
+    margin-top: 30px;
+}
+
+#areaElectricaySoftware h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#areaTratamientoDeAgua {
+    margin-top: 30px;
+}
+
+#areaTratamientoDeAgua h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.productos-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas del mismo ancho */
+    gap: 20px; /* Espaciado entre las cajas de productos */
+
+    /* media query para pantalla pequeñas */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Una sola columna en dispositivos mss pequeños */
+    }
+}
+
+
+#sectionProductos .col-producto {
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+#sectionProductos a {
+    text-decoration: none;
+    color: black;
+}
+
+#sectionProductos .col-producto p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+.container-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas del mismo ancho */
+    gap: 20px;
+
+    /* media query para pantalla pequeñas */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Una sola columna en dispositivos mss pequeños */
+        text-align: center;
+    }
+}
+
+.container-contacto #item-mapa iframe{
+    width: 600px;
+    height: 450px;
+
+    /* anchico el tamaño del mapa en pantallas mas pequeñas*/
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+
+.container-contacto #item-text {
+    grid-column: span 2;
+
+    @media (max-width: 768px) {
+        grid-column: span 1;
+    }
+}
+
+form {
+    font-family: Karla-Regular;
+    margin-bottom: 50px;
+}
+
+.commponente-form-contacto {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#formContacto label {
+    font-weight: bold;
+}
+
+
+/* Estilos para el pie de pagina */
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

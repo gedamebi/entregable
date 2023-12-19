@@ -1,0 +1,35 @@
+.productos-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas del mismo ancho */
+    gap: 20px; /* Espaciado entre las cajas de productos */
+
+    /* media query para pantalla pequeñas */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Una sola columna en dispositivos mss pequeños */
+    }
+}
+
+#sectionProductos {
+    .col-producto {
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out; /* Agrega transición para suavizar el efecto */
+
+        h2 {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+        
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+    }
+
+    /* Cambia el tamaño al pasar el mouse por encima */
+    .col-producto:hover {
+        transform: scale(1.1); /* Puedes ajustar el valor según tus preferencias */
+    }
+}

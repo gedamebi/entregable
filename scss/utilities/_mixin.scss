@@ -1,0 +1,20 @@
+
+
+@mixin animacion ($name, $numeroDeCiclos, $velocidad, $duracion){
+    animation-name: $name;
+    animation-iteration-count: $numeroDeCiclos;
+    animation-timing-function: $velocidad;
+    animation-duration: $duracion;
+}
+
+@mixin fuente ($font, $size, $color, $align){
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+
+    /* Si pasan null en el argumento de aliniacion ignora la asignacion del atributo */
+    @if $align != null {
+        text-align: $align;
+    }
+}
+    
