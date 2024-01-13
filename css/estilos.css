@@ -105,10 +105,11 @@ main .container {
 #slider {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px; }
-  #slider .carousel-img {
-    width: 100%;
-    height: auto; }
+  margin-bottom: 20px;
+  /* .carousel-img {
+        width: 100%;
+        height: auto;
+    } */ }
 
 h1 {
   /* param: fuente, tamaño, color, aliniacion */
