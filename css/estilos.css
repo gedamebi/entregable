@@ -132,6 +132,9 @@ h2 {
     */
   text-align: center; }
 
+.textMisionVision {
+  padding-bottom: 80px; }
+
 #sectionHome h1 {
   /* param: nombre, cantidadDeCiclos, velocidad, duracion */
   animation-name: efecto_mensaje_bienvenida;
